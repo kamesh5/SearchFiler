@@ -1,0 +1,67 @@
+@color-black: #000000;
+@color-lav: #433D5D;
+@color-light-grey: #7C7891;
+@color-white: #ffffff;
+@color-grey: #cccccc;
+.insurance-main {
+	background: @color-white;
+	padding: 25px 0;
+	font-size: 22px;
+	width: 100%;
+	&:odd {
+		background: @color-grey;
+	}
+	.more-info {
+		margin-top: 45px;
+		padding-left: 20px;
+		position: relative;
+		.custom-icon-phone {
+			color: @color-black;
+			position: absolute;
+			top: 10px;
+			left: 14px;
+			font-size: 16px;
+		}
+		.custom-icon-doc {
+			.custom-icon-phone;
+			left: auto;
+			right: 392px;
+		}
+	}
+}
+
+li:nth-child(odd) .row {
+	background-color: @color-white;
+}
+
+li:nth-child(even) .row {
+	background-color: color-grey;
+}
+
+.search-bar {
+	background: @color-lav;
+	padding: 25px 50px;
+	.form-control {
+		background: @color-lav;
+		border-color: @color-lav;
+		width: 60%;
+		color: @color-white;
+		border-bottom: 1px solid @color-light-grey;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+	.custom-icon {
+		color: @color-light-grey;
+		position: absolute;
+		top: 36px;
+		left: 30px;
+		font-size: 16px;
+	}
+}
+
+.dropdown-menu {
+	width: 90%;
+	background: none;
+	margin-top: 25px;
+}

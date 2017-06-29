@@ -1,0 +1,14 @@
+<!doctype html>
+<html ng-app="insurance">
+	<head>
+		<title>Policy Details</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script><script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<script type="text/ng-template" id="insurancedetails.html"><div class="insurance-main row"><div class="name col-md-12" bind-html-unsafe="match.label | typeaheadHighlight:query"></div><div class="more-info"><div class="col-md-3" bind-html-unsafe="match.model.phone | typeaheadHighlight:query"></div><span class="glyphicon glyphicon-earphone custom-icon-phone"></span><div class="col-md-5" bind-html-unsafe="match.model.email | typeaheadHighlight:query"></div><div class="col-md-4"><label>Policy No.</label><span bind-html-unsafe="match.model.policyno | typeaheadHighlight:query"></span></div><span class="glyphicon glyphicon-file custom-icon-doc"></span></div></div></script>
+		<div class="search-bar" ng-controller="InsuranceDetailsControl"><input type="text" ng-model="customSelected" placeholder="SEARCH (Client Name)" typeahead="details as details.name for details in myList | filter:{name:$viewValue}" typeahead-template-url="insurancedetails.html" class="form-control"><span class="glyphicon glyphicon-search custom-icon"></span></div>
+		<script src="app.js"></script>
+	</body>
+</html>

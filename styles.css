@@ -1,0 +1,62 @@
+.insurance-main {
+  background: #ffffff;
+  padding: 25px 0;
+  font-size: 22px;
+  width: 100%;
+}
+.insurance-main:odd {
+  background: #cccccc;
+}
+.insurance-main .more-info {
+  margin-top: 45px;
+  padding-left: 20px;
+  position: relative;
+}
+.insurance-main .more-info .custom-icon-phone {
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 16px;
+}
+.insurance-main .more-info .custom-icon-doc {
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 16px;
+  left: auto;
+  right: 392px;
+}
+li:nth-child(odd) .row {
+  background-color: #fff;
+}
+li:nth-child(even) .row {
+  background-color: #ccc;
+}
+.search-bar {
+  background: #433d5d;
+  padding: 25px 50px;
+}
+.search-bar .form-control {
+  background: #433d5d;
+  border-color: #433d5d;
+  width: 60%;
+  color: #ffffff;
+  border-bottom: 1px solid #7c7891;
+}
+.search-bar .form-control:focus {
+  box-shadow: none;
+}
+.search-bar .custom-icon {
+  color: #7c7891;
+  position: absolute;
+  top: 36px;
+  left: 30px;
+  font-size: 16px;
+}
+.dropdown-menu {
+  width: 90%;
+  background: none;
+  margin-top: 25px;
+}
